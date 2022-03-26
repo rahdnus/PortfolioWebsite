@@ -8,7 +8,7 @@ a{
     font-size: large;
 }
 .body-background{
-    background-color: rgb(24, 22, 22);
+    background-color: rgb(37, 37, 37);
 }
 .nav-bar{
    display: flex;
@@ -18,7 +18,7 @@ a{
    background-color: rgb(248, 185, 229);
    block-size: 5em;
    align-items: center;
-   border-radius: 5em;
+   border-radius: 2em;
 }
 .nav-bar>div:hover
 {
@@ -47,15 +47,35 @@ a{
     text-align: center;
     padding: 10px;
 }
+.section-heading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 0.1em solid rgb(170, 40, 148);
+}
+.section-heading::before{
+    content: "";
+    width: 25%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+
+}
 .content
 {
-    margin-top: 5em;
+    
+    margin-top: 2em;
+    margin-bottom: 5em;
     padding-top: 3em;
     padding-bottom: 3em;
     background-color: chocolate;
     border-radius: 2em;
     color: white;
     font-family: monospace;
+    box-shadow: 20px 20px  #ff58dbcc;
+}
+.content>a{
+    text-decoration: none;
 }
 .right-justify{
     margin-left: auto;
@@ -63,13 +83,33 @@ a{
 #fixed-button
 {
     position: fixed;
-    bottom: -4px;
+    bottom: 10px;
     right: 10px;
 }
 .upbutton {
-    background-color : #31B0D5;
-    color: white;
-    padding: 20x 20px;
-    border-radius: 4px;
-    border-color: #46b8da;
+    background-color : #ff01c8;
+    padding: 10px 10px;
+    border-radius: 15px;
+    border-width: 0.52em;
+
   }
+  .bottom
+  {
+      display: flex;
+      background-color: #ff58dbcc;
+      border-radius: 2em;
+      margin-bottom: 2em;
+      block-size: 10em ;
+  }
+  .bottom>div
+  {
+     margin: auto;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-top: 4em;
+      padding-bottom: 4em;
+  }
+.content>div
+{
+    display: flex;
+}
