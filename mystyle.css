@@ -80,16 +80,32 @@ a{
     color: #f8c2ec;
     font-size: 1.4em;
 }
+.align-flex
+{
+    display: flex;
+}
 .content-overlay{
+    position: absolute;
+    margin-top: -4em;
+
+}
+.content-overlay>div{
     background-color: rgb(248, 185, 229);
     block-size: 4em;
-    padding-right: 0.5em;
+
     border-radius: 2em;
-    margin-top: -3em;
-    margin-left: -2em;
+    padding-top: 0.1em;
     border-color: aliceblue;
     border: 2px solid ; 
-    position: absolute;
+}
+.left-fix
+{
+    padding-left: 0.5em;
+}
+.right-fix
+{
+    padding-right: 0.5em;
+
 }
 .right-justify{
     margin-left: auto;
@@ -99,39 +115,34 @@ a{
     position: fixed;
     bottom: 10px;
     right: 10px;
-}
-.upbutton {
-    background-color : #ff01c8;
-    padding: 10px 10px;
-    border-radius: 15px;
-    border-width: 0.52em;
 
-  }
+}
+
   .bottom
   {
       display: flex;
       justify-content: space-between;
       background-color: #ff58dbcc;
       border-radius: 2em;
-      margin-bottom: 2em;
-      block-size: 7em ;
+      margin-bottom: 0.8em;
+      block-size: 5em ;
   }
   .bottom>div{
       display: flex;
+      padding-top: 0.2em;
   }
   .bottom>div>div
   {
       block-size: 50px;
       padding-left: 0.5em;
       padding-right: 1em;
-      padding-top: 2em;
-      padding-bottom: 4em;
+      padding-top: 1em;
   }
   .bottom>div>p
   {
       color: aliceblue;
       font-size: large;
-      padding-top: 1em;
+     
       padding-left: 1em;
   }
 
