@@ -65,6 +65,7 @@ a{
     margin-bottom: 5em;
     padding-top: 3em;
     padding-bottom: 3em;
+    min-width: 40vh;
     background-color: chocolate;
     border-radius: 2em;
     color: white;
@@ -109,18 +110,29 @@ a{
   .bottom
   {
       display: flex;
+      justify-content: space-between;
       background-color: #ff58dbcc;
       border-radius: 2em;
       margin-bottom: 2em;
-      block-size: 10em ;
+      block-size: 7em ;
   }
-  .bottom>div
+  .bottom>div{
+      display: flex;
+  }
+  .bottom>div>div
   {
-     margin: auto;
-      padding-left: 2em;
-      padding-right: 2em;
-      padding-top: 4em;
+      block-size: 50px;
+      padding-left: 0.5em;
+      padding-right: 1em;
+      padding-top: 2em;
       padding-bottom: 4em;
+  }
+  .bottom>div>p
+  {
+      color: aliceblue;
+      font-size: large;
+      padding-top: 1em;
+      padding-left: 1em;
   }
 
 
