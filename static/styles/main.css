@@ -1,4 +1,6 @@
-
+:root{
+    --header-color:rgb(248, 185, 229);
+}
 
 a{
     color: rgb(81, 36, 165);
@@ -28,6 +30,8 @@ a{
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 5em;
+    transition: background-color 0.25s ease;
+
 
 }
 .nav-bar>div>a{
@@ -35,9 +39,6 @@ a{
     block-size: 2em;
     padding-top: 1em;
     text-decoration: none;
-}
-.nav-bar>div>a:hover{
-    text-decoration:underline;
 }
 .mid-align{
     margin: auto;
@@ -72,14 +73,37 @@ a{
     font-family: monospace;
     box-shadow: 20px 20px  #ff58dbcc;
 }
-.content>a{
-    text-decoration: none;
-}
-.content>div>a{
-    text-decoration:none;
-    color: #f8c2ec;
+
+
+.fancy-underline{
+    text-decoration:none; 
+    display: inline-block;
+    position: relative;
     font-size: 1.4em;
+    color:azure;
 }
+.fancy-underline::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 12.5%;
+    transform: scaleX(0);
+    width: 80%;
+    border-radius: 2px;
+    height: 3px;
+    background-color: rebeccapurple;
+    /* text-decoration: none; */
+    transition: transform 0.25s ease-out;
+
+}
+.fancy-underline:hover::after{
+    transform: scaleX(1);
+    
+}
+/* .content>div>a::after:hover{
+ text-decoration: underline;
+
+   } */
 .align-flex
 {
     display: flex;
