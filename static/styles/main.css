@@ -51,15 +51,14 @@ a{
     color: rgb(255, 242, 242);
     display: inline-block;
     padding-bottom: 5px;
-    border-bottom: 0.1em solid rgb(170, 40, 148);
 }
-.section-heading::before{
+/* .section-heading::before{
     content: "";
-    width: 25%;
-    height: 1px;
-    bottom: 0;
-    left: 25%;
-}
+    /* width: 25%; */
+    /* height: 1px; */
+    /* bottom: 0; */
+    /* left: 25%; 
+} */
 .content
 {
     margin-top: 2em;
@@ -82,6 +81,9 @@ a{
     font-size: 1.4em;
     color:azure;
 }
+.fancy-underline:hover{
+    color:azure;
+}
 .fancy-underline::after{
     content: '';
     position: absolute;
@@ -98,6 +100,7 @@ a{
 }
 .fancy-underline:hover::after{
     transform: scaleX(1);
+    
     
 }
 /* .content>div>a::after:hover{
